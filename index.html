@@ -49,7 +49,7 @@
                 <p>
                     <strong>
                         <center>
-                            Welcome to my portfolio! My name is Blake Berry, a software developer in training.<br><br>This website will likely change in the future as I learn new things, but for now, enjoy!
+                            Welcome to my portfolio! My name is Blake Berry, and I am a software developer.<br><br>The slideshow below shows the languages I am currently familiar with!
                         </center>
                     </strong>
                 </p>
@@ -61,31 +61,33 @@
                     <div id="slideshow-container">
 
                         <div class="slide fade">
-                            <div class="slide-number">1 / 5</div>
+                            <div class="slide-number">1 / 4</div>
                             <img class="slideshow-images" src="img/HTML-CSS-JAVASCRIPT.jpg" style="width:100%">
                             <div class="text">HTML, CSS, JavaScript</div>
                         </div>
 
                         <div class="slide fade">
-                            <div class="slide-number">2 / 5</div>
+                            <div class="slide-number">2 / 4</div>
                             <img class="slideshow-images" src="img/sql-database.jpg" style="width:100%">
                             <div class="text">Databases and SQL</div>
                         </div>
 
                         <div class="slide fade">
-                            <div class="slide-number">3 / 5</div>
+                            <div class="slide-number">3 / 4</div>
                             <img class="slideshow-images" src="img/Python.png" style="width:100%">
                             <div class="text">Python</div>
                         </div>
 
+                        <!--
                         <div class="slide fade">
                             <div class="slide-number">4 / 5</div>
                             <img class="slideshow-images" src="img/Csharp.png" style="width:100%">
                             <div class="text">C# and the .NET Framework</div>
                         </div>
+                        -->
 
                         <div class="slide fade">
-                            <div class="slide-number">5 / 5</div>
+                            <div class="slide-number">4 / 4</div>
                             <img class="slideshow-images" src="img/blake.jpg" style="width:100%">
                             <div class="text">
                                 <a onclick="openContact()" href="#contact" style="color:white; text-decoration: underline;">Get in touch!</a>
@@ -103,7 +105,7 @@
                         <span class="dot" onclick="currentSlide(2)"></span>
                         <span class="dot" onclick="currentSlide(3)"></span>
                         <span class="dot" onclick="currentSlide(4)"></span>
-                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <!-- <span class="dot" onclick="currentSlide(5)"></span> -->
                     </div>
                 </div>
             </div>
@@ -142,7 +144,9 @@
                 </div>
                 <div class="column_1">
                     <h1>About</h1>
-                    <p>I am training at <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a> to learn to code! <br><br>I am looking to become a full stack developer, to gain lots of experience, and to learn many languages like HTML and CSS, JavaScript, Python, C# and potentially many more.<br><br>I currently have entry level knowledge in HTML, CSS, and JavaScript, as well as Python and the Django Framework. I can't wait to learn more!</p>
+                    <p>I am a Python oriented software developer with experience in many different Python tools!
+                        <br><br>I am experienced in building large scale websites utilizing Python and the Django Framework, and other languages involved like HTML & CSS, Javascript, and SQL.
+                        <br><br>I learned to code from <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>! See my projects over on Github, or maybe I can help with your project!</p>
                 </div>
             </div>
 
@@ -162,7 +166,7 @@
         <div id="contact">
             <button onclick="openContact()" class="pop-up-button"> CONTACT </button>
             <div class="form-popup" id="contactForm">
-                <form action="" method="POST" class="form-container">
+                <form action="contact.php" method="POST" class="form-container">
                     <h1>Contact</h1>
                     <label for="name">Name:</label>
                     <input type="text" placeholder="Please enter your name here" name="name" required>
