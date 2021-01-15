@@ -29,7 +29,6 @@
             <a onclick="openContact()">Contact</a>
         </div>
 
-        <div class="btn-cancel" onclick="closeContact()">
 
 <!-- HOME -->
             <br>
@@ -49,14 +48,14 @@
                 <p>
                     <strong>
                         <center>
-                            Welcome to my portfolio! My name is Blake Berry, and I am a software developer.<br><br>The slideshow below shows the languages I am currently familiar with!
+                            Welcome to my portfolio! My name is Blake Berry, and I am a software developer.<br><br>The slideshow below shows the various languages I am familiar with!
                         </center>
                     </strong>
                 </p>
             </div>
 
 <!-- SLIDESHOW -->
-            <div id="slideshow">
+            <div class="scroll-anchor" id="slideshow">
                 <div id="slideshow-background">
                     <div id="slideshow-container">
 
@@ -90,7 +89,7 @@
                             <div class="slide-number">4 / 4</div>
                             <img class="slideshow-images" src="img/blake.jpg" style="width:100%">
                             <div class="text">
-                                <a onclick="openContact()" href="#contact" style="color:white; text-decoration: underline;">Get in touch!</a>
+                                <a onclick="openContact()" style="color:white; text-decoration: underline; cursor: pointer;">Get in touch!</a>
                             </div>
                         </div>
 
@@ -138,20 +137,19 @@
             </script>
 
     <!-- ABOUT -->
-            <div class="row" id="about">
+            <div class="row scroll-anchor" id="about">
                 <div class="column_2">
                     <img src="img/Development.jpg" alt="laptop">
                 </div>
                 <div class="column_1">
                     <h1>About</h1>
-                    <p>I am a Python oriented software developer with experience in many different Python tools!
+                    <p>Hi there! I'm Blake Berry, and I am a Python oriented software developer with experience in many different Python tools!
                         <br><br>I am experienced in building large scale websites utilizing Python and the Django Framework, and other languages involved like HTML & CSS, Javascript, and SQL.
-                        <br><br>I learned to code from <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>! See my projects over on Github, or maybe I can help with your project!</p>
+                        <br><br>I learned to code from <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>! See my projects over on <a href="#github">GitHub</a>, or maybe I can help with your project!</p>
                 </div>
             </div>
-
     <!-- GITHUB -->
-            <div class="row" id="github">
+            <div class="row scroll-anchor" id="github">
                 <div class="column_1">
                     <h1>GitHub</h1>
                     <p>See what projects I'm up to at my GitHub page:<br>
@@ -166,7 +164,7 @@
         <div id="contact">
             <button onclick="openContact()" class="pop-up-button"> CONTACT </button>
             <div class="form-popup" id="contactForm">
-                <form action="contact.php" method="POST" class="form-container">
+                <form action="https://formspree.io/f/mnqolkgv" method="POST" class="form-container">
                     <h1>Contact</h1>
                     <label for="name">Name:</label>
                     <input type="text" placeholder="Please enter your name here" name="name" required>
@@ -182,8 +180,11 @@
     <!-- FOOTER -->
         <footer>
             <p>
-                <center>&copy; Blake Berry</center>
+                <center>&copy; <span id="current-year"> </span> Blake Berry </center>
             </p>
         </footer>
+        <script>
+            document.getElementById("current-year").innerHTML = new Date().getFullYear();
+        </script>
     </body>
 </html>

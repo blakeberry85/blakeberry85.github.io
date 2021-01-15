@@ -256,6 +256,11 @@ body.fade-out {
     clear: both;
 }
 
+.scroll-anchor {
+    padding-top: 50px;
+    margin-top: -50px;
+}
+
 /*HEADING 1 ELEMENTS*/
 h1 {
     text-transform: uppercase;
@@ -314,29 +319,38 @@ img {
 /*CENTER ALIGN ELEMENT HOVER EFFECT*/
 center:hover {
     transition: transform .1s;
-    transform: scale(1.05);
-    color: #eb934b;
+    transform: scale(1.01);
+    color: #000;
+    -webkit-text-fill-color: #eb934b;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: #000;
 }
 
 /*PARAGRAPH ELEMENT HOVER EFFECT*/
 p:hover {
-    color: #eb934b;
+    color: #000;
+    -webkit-text-fill-color: #eb934b;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: #000;
     transition: transform .1s;
-    transform: scale(1.05);
+    transform: scale(1.01);
 }
 
 /*HEADING 1 ELEMENT HOVER EFFECT*/
 h1:hover {
-    color: #eb934b;
+    color: #000;
+    -webkit-text-fill-color: #eb934b;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
     transition: transform .1s;
-    transform: scale(1.05)
+    transform: scale(1.01)
 }
 
 /*IMAGE ELEMENT HOVER EFFECTS*/
 img:hover {
     filter: grayscale(0%);
     transition: transform .1s;
-    transform: scale(1.05);
+    transform: scale(1.01);
 }
 
 /*CONTACT BUTTON*/
@@ -361,7 +375,8 @@ img:hover {
 
 /*POPUP FORM*/
 .form-popup {
-    border: 3px solid #f0f1f0;
+    border: 1.5px solid #f0f1f0;
+    border-color: black;
     z-index: 8;
     display: none;
     position: fixed;
