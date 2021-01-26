@@ -241,6 +241,10 @@ body.fade-out {
     background-color: #f2f2f2;
 }
 
+#github-projects {
+    overflow: scroll;
+}
+
 .column_2 {
     float: left;
     width: 50%;
@@ -261,12 +265,17 @@ body.fade-out {
     margin-top: -50px;
 }
 
-/*HEADING 1 ELEMENTS*/
-h1 {
+/*HEADING 1 AND 2 ELEMENTS*/
+h1, h2 {
     text-transform: uppercase;
     font-family: "Trebuchet MS", Optima;
     text-align: center;
     color: #1a1a1a;
+}
+
+h2 {
+    text-align: left;
+    padding-left: 20px;
 }
 
 .title {
@@ -281,6 +290,10 @@ p {
     font-size: 20px;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+#github-projects p {
+    font-size: 16px;
 }
 
 /*CENTER ALIGN ELEMENTS*/
@@ -336,8 +349,8 @@ p:hover {
     transform: scale(1.01);
 }
 
-/*HEADING 1 ELEMENT HOVER EFFECT*/
-h1:hover {
+/*HEADING 1 AND 2 ELEMENT HOVER EFFECT*/
+h1:hover, h2:hover {
     color: #000;
     -webkit-text-fill-color: #eb934b;
     -webkit-text-stroke-width: 1px;
