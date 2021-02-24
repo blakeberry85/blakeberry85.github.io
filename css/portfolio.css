@@ -23,11 +23,16 @@ body.fade-out {
     overflow:hidden;
     background-color: black;
     position: fixed;
+    display: block;
     top: 0;
     width: 100%;
     z-index: 9;
     -webkit-animation: moveNav 1s;
     animation: moveNav 1s;
+}
+
+.nav-right {
+    float: right;
 }
 
 /*NAVBAR TEXT*/
